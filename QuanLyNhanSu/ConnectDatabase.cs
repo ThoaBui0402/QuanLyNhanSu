@@ -19,7 +19,7 @@ namespace QuanLyNhanSu
 
         public static void ConnectDB()
         {
-            conn = new SqlConnection(@"Data Source=MAYTINH-3FOQHGV\ADMIN;Initial Catalog=QuanLyNhanSu;Integrated Security=True");
+            conn = new SqlConnection(@"Data Source=DESKTOP-J2GH96M\SQL15;Initial Catalog=QuanLyNhanSu1;Integrated Security=True");
             conn.Open();
         }
 
@@ -65,6 +65,14 @@ namespace QuanLyNhanSu
         public static DataTable getAllNhanVien()
         {
             string sql = "select * from NHANVIEN";
+            SqlDataAdapter dap = new SqlDataAdapter(sql, conn);
+            DataTable dt = new DataTable();
+            dap.Fill(dt);
+            return dt;
+        }
+        public static DataTable getNhanVienTimDuoc(string str)
+        {
+            string sql = string.Format("select * from NHANVIEN where MaNV='{0}' or HoTen=N'{0}' or DiaChi=N'{0}' or SDT='{0}' or MaPB='{0}' or CMTND='{0}'", str);
             SqlDataAdapter dap = new SqlDataAdapter(sql, conn);
             DataTable dt = new DataTable();
             dap.Fill(dt);
