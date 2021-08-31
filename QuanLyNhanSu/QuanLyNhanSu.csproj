@@ -54,6 +54,12 @@
   <ItemGroup>
     <Compile Include="ConnectDatabase.cs" />
     <Compile Include="DangNhap.cs" />
+    <Compile Include="FormThemNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormThemNV.designer.cs">
+      <DependentUpon>FormThemNV.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,9 @@
     <Compile Include="PhongBan.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormThemNV.resx">
+      <DependentUpon>FormThemNV.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDangNhap.resx">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
     </EmbeddedResource>
