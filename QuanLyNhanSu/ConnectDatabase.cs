@@ -19,7 +19,7 @@ namespace QuanLyNhanSu
 
         public static void ConnectDB()
         {
-            conn = new SqlConnection(@"Data Source=localhost\SQLEXPRESS01;Initial Catalog=QLNhanSu;Integrated Security=True");
+            conn = new SqlConnection(@"Data Source=MAYTINH-3FOQHGV\ADMIN;Initial Catalog=QuanLyNhanSu;Integrated Security=True");
             conn.Open();
         }
 
@@ -71,5 +71,57 @@ namespace QuanLyNhanSu
             return dt;
         }
 
+        public static int checkNhanVien(string manv)
+        {
+
+            string sql = "select * from NHANVIEN n where ((MaNV like '%' + @text + '%'))";
+            using (SqlCommand command = new SqlCommand(sql, conn))
+            {
+                command.Parameters.Add(new SqlParameter("@text", manv));
+                using (SqlDataReader dataReader = command.ExecuteReader())
+                {
+
+                    if (dataReader.Read() == true)
+                    {
+                        return 1;
+                    }
+                }
+            }
+            return 0;
+        }
+        public static void ThemNhanVien(NhanVien nhanvien)
+        {
+
+            string sql = "insert into NHANVIEN(MaNV, HoTen, BangCap, GioiTinh, NgaySinh, DiaChi, MaPB, CMTND, SDT, DanToc, TonGiao) values(@manv, @tennv, @bangcap, @gioitinh, CONVERT(date, @ngaysinh, 111), @diachi, @mapb, @cmt, @sdt, @dt, @tg)";
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            using (SqlCommand command = new SqlCommand(sql, conn))
+            {
+                command.Parameters.Add(new SqlParameter("@manv", nhanvien.Manv));
+                command.Parameters.Add(new SqlParameter("@tennv", nhanvien.Tennv));
+                command.Parameters.Add(new SqlParameter("@bangcap", nhanvien.Bangcap));
+                command.Parameters.Add(new SqlParameter("@gioitinh", nhanvien.Gt));
+                command.Parameters.Add(new SqlParameter("@ngaysinh", nhanvien.Ngaysinh.GetDateTimeFormats()[6]));
+                command.Parameters.Add(new SqlParameter("@diachi", nhanvien.Diachi));
+                command.Parameters.Add(new SqlParameter("@mapb", nhanvien.Mapb));
+                command.Parameters.Add(new SqlParameter("@cmt", nhanvien.Cmt));
+                command.Parameters.Add(new SqlParameter("@sdt", nhanvien.Sdt));
+                command.Parameters.Add(new SqlParameter("@dt", nhanvien.Dantoc));
+                command.Parameters.Add(new SqlParameter("@tg", nhanvien.Tongiao));
+
+
+
+
+                int kq = command.ExecuteNonQuery();
+                if (kq > 0)
+                {
+                    MessageBox.Show("Thêm nhân viên mới thành công!");
+                }
+                else MessageBox.Show("Thêm nhân viên mới thất bại!");
+                command.Cancel();
+
+
+            }
+        }
     }
 }
+
