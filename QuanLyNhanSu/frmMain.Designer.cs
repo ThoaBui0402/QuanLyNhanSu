@@ -33,16 +33,23 @@ namespace QuanLyNhanSu
             this.wizard1 = new DevComponents.DotNetBar.Wizard();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.ribbonBar11 = new DevComponents.DotNetBar.RibbonBar();
+            this.buttonItem3 = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonPanel4 = new DevComponents.DotNetBar.RibbonPanel();
             this.ribbonBar2 = new DevComponents.DotNetBar.RibbonBar();
+            this.buttonItem5 = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonBar3 = new DevComponents.DotNetBar.RibbonBar();
+            this.buttonItem6 = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonTabItem1 = new DevComponents.DotNetBar.RibbonTabItem();
             this.ribbonPanel1 = new DevComponents.DotNetBar.RibbonPanel();
             this.ribbonBar10 = new DevComponents.DotNetBar.RibbonBar();
             this.buttonItem1 = new DevComponents.DotNetBar.ButtonItem();
+            this.btnvtcv = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonBar7 = new DevComponents.DotNetBar.RibbonBar();
+            this.btnNhanVien = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonBar4 = new DevComponents.DotNetBar.RibbonBar();
+            this.btnChucVu_Main = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonBar1 = new DevComponents.DotNetBar.RibbonBar();
+            this.btnfrmMain_PB = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonTabItem5 = new DevComponents.DotNetBar.RibbonTabItem();
             this.ribbonPanel5 = new DevComponents.DotNetBar.RibbonPanel();
             this.ribbonTabItem6 = new DevComponents.DotNetBar.RibbonTabItem();
@@ -53,30 +60,25 @@ namespace QuanLyNhanSu
             this.ribbonPanel2 = new DevComponents.DotNetBar.RibbonPanel();
             this.btnTroGiup = new DevComponents.DotNetBar.RibbonBar();
             this.trogiup = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem12 = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonBar9 = new DevComponents.DotNetBar.RibbonBar();
             this.btnDoiMK = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem11 = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonBar8 = new DevComponents.DotNetBar.RibbonBar();
+            this.buttonItem10 = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonBar6 = new DevComponents.DotNetBar.RibbonBar();
             this.buttonItem2 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem9 = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonBar5 = new DevComponents.DotNetBar.RibbonBar();
             this.btnDangNhap = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem7 = new DevComponents.DotNetBar.ButtonItem();
             this.label1 = new System.Windows.Forms.Label();
             this.ribbonTabItem4 = new DevComponents.DotNetBar.RibbonTabItem();
             this.ribbonControl1 = new DevComponents.DotNetBar.RibbonControl();
-            this.buttonItem12 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem11 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem10 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem9 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem7 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem3 = new DevComponents.DotNetBar.ButtonItem();
-            this.btnvtcv = new DevComponents.DotNetBar.ButtonItem();
-            this.btnNhanVien = new DevComponents.DotNetBar.ButtonItem();
-            this.btnChucVu_Main = new DevComponents.DotNetBar.ButtonItem();
-            this.btnfrmMain_PB = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem5 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem6 = new DevComponents.DotNetBar.ButtonItem();
             this.buttonItem4 = new DevComponents.DotNetBar.ButtonItem();
             this.buttonItem8 = new DevComponents.DotNetBar.ButtonItem();
+            this.btnTimKiem = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.ribbonPanel4.SuspendLayout();
             this.ribbonPanel1.SuspendLayout();
             this.ribbonPanel5.SuspendLayout();
@@ -148,6 +150,13 @@ namespace QuanLyNhanSu
             this.ribbonBar11.TabIndex = 0;
             this.ribbonBar11.Text = "Hợp Đồng";
             // 
+            // buttonItem3
+            // 
+            this.buttonItem3.Image = global::QuanLyNhanSu.Properties.Resources.contract2_pencil;
+            this.buttonItem3.Name = "buttonItem3";
+            this.buttonItem3.SubItemsExpandWidth = 14;
+            this.buttonItem3.Text = "buttonItem3";
+            // 
             // ribbonPanel4
             // 
             this.ribbonPanel4.Controls.Add(this.ribbonBar2);
@@ -177,6 +186,14 @@ namespace QuanLyNhanSu
             this.ribbonBar2.TabIndex = 2;
             this.ribbonBar2.Text = "Cá Nhân";
             // 
+            // buttonItem5
+            // 
+            this.buttonItem5.Image = global::QuanLyNhanSu.Properties.Resources.user_man2;
+            this.buttonItem5.ImagePosition = DevComponents.DotNetBar.eImagePosition.Bottom;
+            this.buttonItem5.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonItem5.ImageSmall")));
+            this.buttonItem5.Name = "buttonItem5";
+            this.buttonItem5.SubItemsExpandWidth = 14;
+            // 
             // ribbonBar3
             // 
             this.ribbonBar3.AutoOverflowEnabled = true;
@@ -195,6 +212,14 @@ namespace QuanLyNhanSu
             this.ribbonBar3.TabIndex = 1;
             this.ribbonBar3.Text = "Phòng Ban";
             this.ribbonBar3.ItemClick += new System.EventHandler(this.ribbonBar3_ItemClick);
+            // 
+            // buttonItem6
+            // 
+            this.buttonItem6.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem6.Image")));
+            this.buttonItem6.ImagePosition = DevComponents.DotNetBar.eImagePosition.Bottom;
+            this.buttonItem6.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonItem6.ImageSmall")));
+            this.buttonItem6.Name = "buttonItem6";
+            this.buttonItem6.SubItemsExpandWidth = 14;
             // 
             // ribbonTabItem1
             // 
@@ -238,6 +263,13 @@ namespace QuanLyNhanSu
             this.buttonItem1.Name = "buttonItem1";
             this.buttonItem1.SubItemsExpandWidth = 14;
             // 
+            // btnvtcv
+            // 
+            this.btnvtcv.Image = global::QuanLyNhanSu.Properties.Resources.gettyimages_638562622_170x1701;
+            this.btnvtcv.Name = "btnvtcv";
+            this.btnvtcv.SubItemsExpandWidth = 14;
+            this.btnvtcv.Text = "buttonItem3";
+            // 
             // ribbonBar7
             // 
             this.ribbonBar7.AutoOverflowEnabled = true;
@@ -253,6 +285,13 @@ namespace QuanLyNhanSu
             this.ribbonBar7.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.ribbonBar7.TabIndex = 3;
             this.ribbonBar7.Text = "Nhân viên";
+            // 
+            // btnNhanVien
+            // 
+            this.btnNhanVien.Image = global::QuanLyNhanSu.Properties.Resources.preferences_contact_list__1_;
+            this.btnNhanVien.Name = "btnNhanVien";
+            this.btnNhanVien.SubItemsExpandWidth = 14;
+            this.btnNhanVien.Text = "buttonItem1";
             // 
             // ribbonBar4
             // 
@@ -271,6 +310,13 @@ namespace QuanLyNhanSu
             this.ribbonBar4.TabIndex = 1;
             this.ribbonBar4.Text = "Chức Vụ";
             // 
+            // btnChucVu_Main
+            // 
+            this.btnChucVu_Main.Image = global::QuanLyNhanSu.Properties.Resources.business_people_01;
+            this.btnChucVu_Main.ImagePosition = DevComponents.DotNetBar.eImagePosition.Bottom;
+            this.btnChucVu_Main.Name = "btnChucVu_Main";
+            this.btnChucVu_Main.SubItemsExpandWidth = 14;
+            // 
             // ribbonBar1
             // 
             this.ribbonBar1.AutoOverflowEnabled = true;
@@ -288,6 +334,15 @@ namespace QuanLyNhanSu
             this.ribbonBar1.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.ribbonBar1.TabIndex = 0;
             this.ribbonBar1.Text = "Phòng Ban";
+            // 
+            // btnfrmMain_PB
+            // 
+            this.btnfrmMain_PB.Image = ((System.Drawing.Image)(resources.GetObject("btnfrmMain_PB.Image")));
+            this.btnfrmMain_PB.ImagePosition = DevComponents.DotNetBar.eImagePosition.Bottom;
+            this.btnfrmMain_PB.ImageSmall = ((System.Drawing.Image)(resources.GetObject("btnfrmMain_PB.ImageSmall")));
+            this.btnfrmMain_PB.Name = "btnfrmMain_PB";
+            this.btnfrmMain_PB.SubItemsExpandWidth = 14;
+            this.btnfrmMain_PB.Click += new System.EventHandler(this.btnfrmMain_PB_Click);
             // 
             // ribbonTabItem5
             // 
@@ -348,17 +403,19 @@ namespace QuanLyNhanSu
             // 
             // ribbonPanel2
             // 
+            this.ribbonPanel2.Controls.Add(this.textBox1);
+            this.ribbonPanel2.Controls.Add(this.btnTimKiem);
             this.ribbonPanel2.Controls.Add(this.btnTroGiup);
             this.ribbonPanel2.Controls.Add(this.ribbonBar9);
             this.ribbonPanel2.Controls.Add(this.ribbonBar8);
             this.ribbonPanel2.Controls.Add(this.ribbonBar6);
             this.ribbonPanel2.Controls.Add(this.ribbonBar5);
             this.ribbonPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ribbonPanel2.Location = new System.Drawing.Point(0, 51);
+            this.ribbonPanel2.Location = new System.Drawing.Point(0, 0);
             this.ribbonPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.ribbonPanel2.Name = "ribbonPanel2";
             this.ribbonPanel2.Padding = new System.Windows.Forms.Padding(4, 0, 4, 4);
-            this.ribbonPanel2.Size = new System.Drawing.Size(1589, 135);
+            this.ribbonPanel2.Size = new System.Drawing.Size(1589, 186);
             this.ribbonPanel2.TabIndex = 6;
             // 
             // btnTroGiup
@@ -373,7 +430,7 @@ namespace QuanLyNhanSu
             this.btnTroGiup.Location = new System.Drawing.Point(492, 0);
             this.btnTroGiup.Margin = new System.Windows.Forms.Padding(4);
             this.btnTroGiup.Name = "btnTroGiup";
-            this.btnTroGiup.Size = new System.Drawing.Size(120, 131);
+            this.btnTroGiup.Size = new System.Drawing.Size(120, 182);
             this.btnTroGiup.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.btnTroGiup.TabIndex = 4;
             this.btnTroGiup.Text = "Trợ Giúp";
@@ -382,6 +439,14 @@ namespace QuanLyNhanSu
             // 
             this.trogiup.Name = "trogiup";
             this.trogiup.SubItemsExpandWidth = 14;
+            // 
+            // buttonItem12
+            // 
+            this.buttonItem12.Image = global::QuanLyNhanSu.Properties.Resources.symbol_help;
+            this.buttonItem12.ImagePosition = DevComponents.DotNetBar.eImagePosition.Bottom;
+            this.buttonItem12.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonItem12.ImageSmall")));
+            this.buttonItem12.Name = "buttonItem12";
+            this.buttonItem12.SubItemsExpandWidth = 14;
             // 
             // ribbonBar9
             // 
@@ -395,7 +460,7 @@ namespace QuanLyNhanSu
             this.ribbonBar9.Location = new System.Drawing.Point(367, 0);
             this.ribbonBar9.Margin = new System.Windows.Forms.Padding(4);
             this.ribbonBar9.Name = "ribbonBar9";
-            this.ribbonBar9.Size = new System.Drawing.Size(125, 131);
+            this.ribbonBar9.Size = new System.Drawing.Size(125, 182);
             this.ribbonBar9.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.ribbonBar9.TabIndex = 3;
             this.ribbonBar9.Text = "Đổi Mật Khẩu";
@@ -405,6 +470,14 @@ namespace QuanLyNhanSu
             // 
             this.btnDoiMK.Name = "btnDoiMK";
             this.btnDoiMK.SubItemsExpandWidth = 14;
+            // 
+            // buttonItem11
+            // 
+            this.buttonItem11.Image = global::QuanLyNhanSu.Properties.Resources.ic_arrow_round_change3;
+            this.buttonItem11.ImagePosition = DevComponents.DotNetBar.eImagePosition.Bottom;
+            this.buttonItem11.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonItem11.ImageSmall")));
+            this.buttonItem11.Name = "buttonItem11";
+            this.buttonItem11.SubItemsExpandWidth = 14;
             // 
             // ribbonBar8
             // 
@@ -417,10 +490,18 @@ namespace QuanLyNhanSu
             this.ribbonBar8.Location = new System.Drawing.Point(250, 0);
             this.ribbonBar8.Margin = new System.Windows.Forms.Padding(4);
             this.ribbonBar8.Name = "ribbonBar8";
-            this.ribbonBar8.Size = new System.Drawing.Size(117, 131);
+            this.ribbonBar8.Size = new System.Drawing.Size(117, 182);
             this.ribbonBar8.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.ribbonBar8.TabIndex = 2;
             this.ribbonBar8.Text = "Thêm Tài Khoản";
+            // 
+            // buttonItem10
+            // 
+            this.buttonItem10.Image = global::QuanLyNhanSu.Properties.Resources.button_plus_red2;
+            this.buttonItem10.ImagePosition = DevComponents.DotNetBar.eImagePosition.Bottom;
+            this.buttonItem10.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonItem10.ImageSmall")));
+            this.buttonItem10.Name = "buttonItem10";
+            this.buttonItem10.SubItemsExpandWidth = 14;
             // 
             // ribbonBar6
             // 
@@ -434,7 +515,7 @@ namespace QuanLyNhanSu
             this.ribbonBar6.Location = new System.Drawing.Point(121, 0);
             this.ribbonBar6.Margin = new System.Windows.Forms.Padding(4);
             this.ribbonBar6.Name = "ribbonBar6";
-            this.ribbonBar6.Size = new System.Drawing.Size(129, 131);
+            this.ribbonBar6.Size = new System.Drawing.Size(129, 182);
             this.ribbonBar6.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.ribbonBar6.TabIndex = 1;
             this.ribbonBar6.Text = "Đăng Xuất";
@@ -443,6 +524,14 @@ namespace QuanLyNhanSu
             // 
             this.buttonItem2.Name = "buttonItem2";
             this.buttonItem2.SubItemsExpandWidth = 14;
+            // 
+            // buttonItem9
+            // 
+            this.buttonItem9.Image = global::QuanLyNhanSu.Properties.Resources.package_available_locked21;
+            this.buttonItem9.ImagePosition = DevComponents.DotNetBar.eImagePosition.Bottom;
+            this.buttonItem9.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonItem9.ImageSmall")));
+            this.buttonItem9.Name = "buttonItem9";
+            this.buttonItem9.SubItemsExpandWidth = 14;
             // 
             // ribbonBar5
             // 
@@ -456,7 +545,7 @@ namespace QuanLyNhanSu
             this.ribbonBar5.Location = new System.Drawing.Point(4, 0);
             this.ribbonBar5.Margin = new System.Windows.Forms.Padding(4);
             this.ribbonBar5.Name = "ribbonBar5";
-            this.ribbonBar5.Size = new System.Drawing.Size(117, 131);
+            this.ribbonBar5.Size = new System.Drawing.Size(117, 182);
             this.ribbonBar5.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.ribbonBar5.TabIndex = 0;
             this.ribbonBar5.Text = "Đăng Nhập";
@@ -465,6 +554,14 @@ namespace QuanLyNhanSu
             // 
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.SubItemsExpandWidth = 14;
+            // 
+            // buttonItem7
+            // 
+            this.buttonItem7.Image = global::QuanLyNhanSu.Properties.Resources.package_installed_locked3;
+            this.buttonItem7.ImagePosition = DevComponents.DotNetBar.eImagePosition.Bottom;
+            this.buttonItem7.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonItem7.ImageSmall")));
+            this.buttonItem7.Name = "buttonItem7";
+            this.buttonItem7.SubItemsExpandWidth = 14;
             // 
             // label1
             // 
@@ -509,99 +606,6 @@ namespace QuanLyNhanSu
             this.ribbonControl1.TabGroupHeight = 14;
             this.ribbonControl1.TabIndex = 5;
             // 
-            // buttonItem12
-            // 
-            this.buttonItem12.Image = global::QuanLyNhanSu.Properties.Resources.symbol_help;
-            this.buttonItem12.ImagePosition = DevComponents.DotNetBar.eImagePosition.Bottom;
-            this.buttonItem12.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonItem12.ImageSmall")));
-            this.buttonItem12.Name = "buttonItem12";
-            this.buttonItem12.SubItemsExpandWidth = 14;
-            // 
-            // buttonItem11
-            // 
-            this.buttonItem11.Image = global::QuanLyNhanSu.Properties.Resources.ic_arrow_round_change3;
-            this.buttonItem11.ImagePosition = DevComponents.DotNetBar.eImagePosition.Bottom;
-            this.buttonItem11.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonItem11.ImageSmall")));
-            this.buttonItem11.Name = "buttonItem11";
-            this.buttonItem11.SubItemsExpandWidth = 14;
-            // 
-            // buttonItem10
-            // 
-            this.buttonItem10.Image = global::QuanLyNhanSu.Properties.Resources.button_plus_red2;
-            this.buttonItem10.ImagePosition = DevComponents.DotNetBar.eImagePosition.Bottom;
-            this.buttonItem10.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonItem10.ImageSmall")));
-            this.buttonItem10.Name = "buttonItem10";
-            this.buttonItem10.SubItemsExpandWidth = 14;
-            // 
-            // buttonItem9
-            // 
-            this.buttonItem9.Image = global::QuanLyNhanSu.Properties.Resources.package_available_locked21;
-            this.buttonItem9.ImagePosition = DevComponents.DotNetBar.eImagePosition.Bottom;
-            this.buttonItem9.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonItem9.ImageSmall")));
-            this.buttonItem9.Name = "buttonItem9";
-            this.buttonItem9.SubItemsExpandWidth = 14;
-            // 
-            // buttonItem7
-            // 
-            this.buttonItem7.Image = global::QuanLyNhanSu.Properties.Resources.package_installed_locked3;
-            this.buttonItem7.ImagePosition = DevComponents.DotNetBar.eImagePosition.Bottom;
-            this.buttonItem7.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonItem7.ImageSmall")));
-            this.buttonItem7.Name = "buttonItem7";
-            this.buttonItem7.SubItemsExpandWidth = 14;
-            // 
-            // buttonItem3
-            // 
-            this.buttonItem3.Image = global::QuanLyNhanSu.Properties.Resources.contract2_pencil;
-            this.buttonItem3.Name = "buttonItem3";
-            this.buttonItem3.SubItemsExpandWidth = 14;
-            this.buttonItem3.Text = "buttonItem3";
-            // 
-            // btnvtcv
-            // 
-            this.btnvtcv.Image = global::QuanLyNhanSu.Properties.Resources.gettyimages_638562622_170x1701;
-            this.btnvtcv.Name = "btnvtcv";
-            this.btnvtcv.SubItemsExpandWidth = 14;
-            this.btnvtcv.Text = "buttonItem3";
-            // 
-            // btnNhanVien
-            // 
-            this.btnNhanVien.Image = global::QuanLyNhanSu.Properties.Resources.preferences_contact_list__1_;
-            this.btnNhanVien.Name = "btnNhanVien";
-            this.btnNhanVien.SubItemsExpandWidth = 14;
-            this.btnNhanVien.Text = "buttonItem1";
-            // 
-            // btnChucVu_Main
-            // 
-            this.btnChucVu_Main.Image = global::QuanLyNhanSu.Properties.Resources.business_people_01;
-            this.btnChucVu_Main.ImagePosition = DevComponents.DotNetBar.eImagePosition.Bottom;
-            this.btnChucVu_Main.Name = "btnChucVu_Main";
-            this.btnChucVu_Main.SubItemsExpandWidth = 14;
-            // 
-            // btnfrmMain_PB
-            // 
-            this.btnfrmMain_PB.Image = ((System.Drawing.Image)(resources.GetObject("btnfrmMain_PB.Image")));
-            this.btnfrmMain_PB.ImagePosition = DevComponents.DotNetBar.eImagePosition.Bottom;
-            this.btnfrmMain_PB.ImageSmall = ((System.Drawing.Image)(resources.GetObject("btnfrmMain_PB.ImageSmall")));
-            this.btnfrmMain_PB.Name = "btnfrmMain_PB";
-            this.btnfrmMain_PB.SubItemsExpandWidth = 14;
-            this.btnfrmMain_PB.Click += new System.EventHandler(this.btnfrmMain_PB_Click);
-            // 
-            // buttonItem5
-            // 
-            this.buttonItem5.Image = global::QuanLyNhanSu.Properties.Resources.user_man2;
-            this.buttonItem5.ImagePosition = DevComponents.DotNetBar.eImagePosition.Bottom;
-            this.buttonItem5.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonItem5.ImageSmall")));
-            this.buttonItem5.Name = "buttonItem5";
-            this.buttonItem5.SubItemsExpandWidth = 14;
-            // 
-            // buttonItem6
-            // 
-            this.buttonItem6.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem6.Image")));
-            this.buttonItem6.ImagePosition = DevComponents.DotNetBar.eImagePosition.Bottom;
-            this.buttonItem6.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonItem6.ImageSmall")));
-            this.buttonItem6.Name = "buttonItem6";
-            this.buttonItem6.SubItemsExpandWidth = 14;
-            // 
             // buttonItem4
             // 
             this.buttonItem4.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem4.Image")));
@@ -617,6 +621,23 @@ namespace QuanLyNhanSu
             this.buttonItem8.ImageSmall = ((System.Drawing.Image)(resources.GetObject("buttonItem8.ImageSmall")));
             this.buttonItem8.Name = "buttonItem8";
             this.buttonItem8.SubItemsExpandWidth = 14;
+            // 
+            // btnTimKiem
+            // 
+            this.btnTimKiem.Location = new System.Drawing.Point(996, 61);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.Size = new System.Drawing.Size(135, 35);
+            this.btnTimKiem.TabIndex = 5;
+            this.btnTimKiem.Text = "Tìm kiếm";
+            this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(1162, 67);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(312, 22);
+            this.textBox1.TabIndex = 6;
             // 
             // frmMain
             // 
@@ -636,6 +657,7 @@ namespace QuanLyNhanSu
             this.ribbonPanel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgwTotal)).EndInit();
             this.ribbonPanel2.ResumeLayout(false);
+            this.ribbonPanel2.PerformLayout();
             this.ribbonControl1.ResumeLayout(false);
             this.ribbonControl1.PerformLayout();
             this.ResumeLayout(false);
@@ -692,5 +714,7 @@ namespace QuanLyNhanSu
         private DevComponents.DotNetBar.ButtonItem buttonItem8;
         private DevComponents.DotNetBar.ButtonItem buttonItem12;
         private DevComponents.DotNetBar.ButtonItem buttonItem11;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnTimKiem;
     }
 }

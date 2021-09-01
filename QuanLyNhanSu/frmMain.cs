@@ -63,5 +63,12 @@ namespace QuanLyNhanSu
         {
 
         }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            BindingSource soureTB = new BindingSource();
+            soureTB.DataSource = ConnectDatabase.getNhanVienTimDuoc(textBox1.Text);
+            dgwTotal.DataSource = soureTB;
+        }
     }
 }
