@@ -19,7 +19,7 @@ namespace QuanLyNhanSu
 
         public static void ConnectDB()
         {
-            conn = new SqlConnection(@"Data Source=DESKTOP-VPF0AQ3;Initial Catalog=QuanLyNhanSu1;Integrated Security=True");
+             conn = new SqlConnection(@"Data Source=DESKTOP-VPF0AQ3;Initial Catalog=QuanLyNhanSu1;Integrated Security=True");
             conn.Open();
         }
 
@@ -224,6 +224,28 @@ namespace QuanLyNhanSu
             using (SqlCommand command = new SqlCommand(sql, conn))
             {
                 command.Parameters.Add(new SqlParameter("@mahd", hd.MaHD));
+
+                command.ExecuteNonQuery();
+                command.Cancel();
+            }
+        }
+        public static void SuaNhanVien(NhanVien nhanvien)
+        {
+            string sql = "UPDATE NHANVIEN set HoTen=@tennv, DiaChi=@diadiem, CMTND=@cmt, SDT=@sdt, DanToc=@dt, TonGiao=@tg, BangCap=@bangcap, MaPB=@mapb, GioiTinh=@gioitinh, NgaySinh=CONVERT(date, @ngaysinh, 111) where MaNV=@manv";
+
+            using (SqlCommand command = new SqlCommand(sql, conn))
+            {
+                command.Parameters.Add(new SqlParameter("@manv", nhanvien.Manv));
+                command.Parameters.Add(new SqlParameter("@tennv", nhanvien.Tennv));
+                command.Parameters.Add(new SqlParameter("@bangcap", nhanvien.Bangcap));
+                command.Parameters.Add(new SqlParameter("@gioitinh", nhanvien.Gt));
+                command.Parameters.Add(new SqlParameter("@ngaysinh", nhanvien.Ngaysinh.GetDateTimeFormats()[6]));
+                command.Parameters.Add(new SqlParameter("@diadiem", nhanvien.Diachi));
+                command.Parameters.Add(new SqlParameter("@mapb", nhanvien.Mapb));
+                command.Parameters.Add(new SqlParameter("@cmt", nhanvien.Cmt));
+                command.Parameters.Add(new SqlParameter("@sdt", nhanvien.Sdt));
+                command.Parameters.Add(new SqlParameter("@dt", nhanvien.Dantoc));
+                command.Parameters.Add(new SqlParameter("@tg", nhanvien.Tongiao));
 
                 command.ExecuteNonQuery();
                 command.Cancel();
