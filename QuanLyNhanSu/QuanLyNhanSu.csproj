@@ -53,6 +53,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChucVu.cs" />
     <Compile Include="ConnectDatabase.cs" />
     <Compile Include="DangNhap.cs" />
     <Compile Include="FormThemNV.cs">
@@ -73,11 +74,32 @@
     <Compile Include="DoiMatKhau.Designer.cs">
       <DependentUpon>DoiMatKhau.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmHopDong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHopDong.Designer.cs">
+      <DependentUpon>frmHopDong.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChucVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChucVu.Designer.cs">
+      <DependentUpon>frmChucVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhongBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhongBan.Designer.cs">
+      <DependentUpon>frmPhongBan.cs</DependentUpon>
     </Compile>
     <Compile Include="frmThemTaiKhoan.cs">
       <SubType>Form</SubType>
@@ -85,14 +107,25 @@
     <Compile Include="frmThemTaiKhoan.designer.cs">
       <DependentUpon>frmThemTaiKhoan.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmVTCV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVTCV.Designer.cs">
+      <DependentUpon>frmVTCV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HopDong.cs" />
     <Compile Include="Luong.cs" />
     <Compile Include="NhanVien.cs" />
     <Compile Include="PhanCong_ViTri.cs" />
     <Compile Include="PhongBan.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViTri.cs" />
     <EmbeddedResource Include="FormThemNV.resx">
       <DependentUpon>FormThemNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChucVu.resx">
+      <DependentUpon>frmChucVu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDangNhap.resx">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
@@ -100,11 +133,23 @@
     <EmbeddedResource Include="DoiMatKhau.resx">
       <DependentUpon>DoiMatKhau.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmHopDong.resx">
+      <DependentUpon>frmHopDong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmNhanVien.resx">
+      <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPhongBan.resx">
+      <DependentUpon>frmPhongBan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmThemTaiKhoan.resx">
       <DependentUpon>frmThemTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVTCV.resx">
+      <DependentUpon>frmVTCV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

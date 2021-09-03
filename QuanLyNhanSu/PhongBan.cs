@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuanLiNhanSu
+namespace QuanLyNhanSu
 {
     class PhongBan
     {
@@ -91,5 +91,6 @@ namespace QuanLiNhanSu
             this.Matp = matp;
             this.Tentp = tentp;
         }
-    }
+ 
+}
 }

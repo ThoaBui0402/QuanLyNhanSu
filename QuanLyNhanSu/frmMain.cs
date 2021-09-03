@@ -70,5 +70,36 @@ namespace QuanLyNhanSu
             soureTB.DataSource = ConnectDatabase.getNhanVienTimDuoc(textBox1.Text);
             dgwTotal.DataSource = soureTB;
         }
+
+        private void dgwTotal_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+        public static frmPhongBan form_phongban = new frmPhongBan();
+        private void ribbonBar1_ItemClick(object sender, EventArgs e)
+        {
+            form_phongban = new frmPhongBan();
+            form_phongban.Show();
+        }
+
+        private void ribbonBar7_ItemClick(object sender, EventArgs e)
+        {
+            frmNhanVien frm = new frmNhanVien();
+            frm.Show();
+        }
+        public static frmChucVu frm_ChucVu;
+        private void ribbonBar4_ItemClick(object sender, EventArgs e)
+        { 
+            frm_ChucVu = new frmChucVu();
+            frm_ChucVu.Show();
+       
+    }
+
+        private void ribbonBar10_ItemClick(object sender, EventArgs e)
+        {
+
+            frmHopDong frm = new frmHopDong();
+            frm.Show();
+        }
     }
 }
