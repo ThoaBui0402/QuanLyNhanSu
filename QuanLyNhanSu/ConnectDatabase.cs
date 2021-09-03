@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Deployment.Application;
 using System.Data.OleDb;
-using QuanLyNhanSu;
+
 
 namespace QuanLyNhanSu
 {
@@ -19,7 +19,7 @@ namespace QuanLyNhanSu
 
         public static void ConnectDB()
         {
-            conn = new SqlConnection(@"Data Source=DESKTOP-J2GH96M\SQL15;Initial Catalog=QuanLyNhanSu1;Integrated Security=True");
+            conn = new SqlConnection(@"Data Source=DESKTOP-VPF0AQ3;Initial Catalog=QuanLyNhanSu1;Integrated Security=True");
             conn.Open();
         }
 
@@ -61,7 +61,7 @@ namespace QuanLyNhanSu
                 command.Cancel();
             }
         }
-
+        //********************Nhan Vien********************
         public static DataTable getAllNhanVien()
         {
             string sql = "select * from NHANVIEN";
@@ -128,6 +128,105 @@ namespace QuanLyNhanSu
                 command.Cancel();
 
 
+            }
+        }
+
+        public static void XoaNhanVien(NhanVien nv)
+        {
+
+            string sql = "DELETE NHANVIEN  where MaNV=@manv";
+
+            using (SqlCommand command = new SqlCommand(sql, conn))
+            {
+                command.Parameters.Add(new SqlParameter("@manv", nv.Manv));
+                command.ExecuteNonQuery();
+                command.Cancel();
+            }
+        }
+        //*****************************Chức Vụ*************************************
+        public static DataTable getAllChucVu()
+        {
+            string sql = "select *from CHUCVU";
+            SqlDataAdapter dap = new SqlDataAdapter(sql, conn);
+            DataTable dt = new DataTable();
+            dap.Fill(dt);
+            return dt;
+        }
+        public static void XoaChucVu(ChucVu cv)
+        {
+            string sql = "DELETE FROM CHUCVU  where MaCV=@macv";
+
+            using (SqlCommand command = new SqlCommand(sql, conn))
+            {
+                command.Parameters.Add(new SqlParameter("@macv", cv.Macv));
+                command.ExecuteNonQuery();
+                command.Cancel();
+
+
+            }
+        }
+        //***********************Phong Ban*******************************//
+        public static DataTable getAllPhongBan()
+        {
+            string sql = "select *from PHONGBAN";
+            SqlDataAdapter dap = new SqlDataAdapter(sql, conn);
+            DataTable dt = new DataTable();
+            dap.Fill(dt);
+            return dt;
+        }
+        public static void XoaPhongBan(PhongBan pb)
+        {
+            string sql = "DELETE PHONGBAN  where MaPB=@mapb";
+
+            using (SqlCommand command = new SqlCommand(sql, conn))
+            {
+                command.Parameters.Add(new SqlParameter("@mapb", pb.Mapb));
+                command.ExecuteNonQuery();
+                command.Cancel();
+            }
+        }
+        //**********************Vi trí***********************************//
+        public static DataTable getAllViTri()
+        {
+            string sql = "select *from VITRICONGVIEC";
+            SqlDataAdapter dap = new SqlDataAdapter(sql, conn);
+            DataTable dt = new DataTable();
+            dap.Fill(dt);
+            return dt;
+        }
+
+        public static void XoaViTri(ViTri vt)
+        {
+            string sql = "DELETE FROM VITRICONGVIEC  where MaVT=@mavt";
+
+            using (SqlCommand command = new SqlCommand(sql, conn))
+            {
+                command.Parameters.Add(new SqlParameter("@mavt", vt.Mavt));
+                command.ExecuteNonQuery();
+                command.Cancel();
+            }
+        }
+        //*************************Hop đồng*********************//
+        public static DataTable getAllHopDong()
+        {
+
+            string sql = "select * from HDLD";
+            SqlDataAdapter dap = new SqlDataAdapter(sql, conn);
+            DataTable dt = new DataTable();
+            dap.Fill(dt);
+            return dt;
+        }
+       
+        public static void XoaHopDong(HopDong hd)
+        {
+            string sql = "DELETE from HDLD  where MaHD=@mahd";
+
+            using (SqlCommand command = new SqlCommand(sql, conn))
+            {
+                command.Parameters.Add(new SqlParameter("@mahd", hd.MaHD));
+
+                command.ExecuteNonQuery();
+                command.Cancel();
             }
         }
     }
