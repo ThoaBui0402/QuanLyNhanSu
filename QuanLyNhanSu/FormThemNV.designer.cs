@@ -151,7 +151,7 @@ namespace QuanLyNhanSu
             // 
             this.btnHienThi.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnHienThi.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnHienThi.Location = new System.Drawing.Point(268, 345);
+            this.btnHienThi.Location = new System.Drawing.Point(259, 345);
             this.btnHienThi.Name = "btnHienThi";
             this.btnHienThi.Size = new System.Drawing.Size(85, 43);
             this.btnHienThi.TabIndex = 37;
@@ -162,7 +162,7 @@ namespace QuanLyNhanSu
             this.btnThemNV.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnThemNV.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.btnThemNV.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemNV.Location = new System.Drawing.Point(177, 345);
+            this.btnThemNV.Location = new System.Drawing.Point(127, 345);
             this.btnThemNV.Name = "btnThemNV";
             this.btnThemNV.Size = new System.Drawing.Size(82, 43);
             this.btnThemNV.TabIndex = 35;
@@ -214,7 +214,7 @@ namespace QuanLyNhanSu
             this.labelX9.ImagePosition = DevComponents.DotNetBar.eImagePosition.Right;
             this.labelX9.Location = new System.Drawing.Point(386, 19);
             this.labelX9.Name = "labelX9";
-            this.labelX9.Size = new System.Drawing.Size(270, 29);
+            this.labelX9.Size = new System.Drawing.Size(218, 29);
             this.labelX9.TabIndex = 20;
             this.labelX9.Text = "THÊM NHÂN VIÊN MỚI";
             // 

@@ -31,3 +31,20 @@ D:\Ky1nam4\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.csproj.CoreCompileIn
 D:\Ky1nam4\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.csproj.CopyComplete
 D:\Ky1nam4\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.exe
 D:\Ky1nam4\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.pdb
+D:\new folder\QLNS\QuanLyNhanSu\bin\Debug\QuanLyNhanSu.exe.config
+D:\new folder\QLNS\QuanLyNhanSu\bin\Debug\QuanLyNhanSu.exe
+D:\new folder\QLNS\QuanLyNhanSu\bin\Debug\QuanLyNhanSu.pdb
+D:\new folder\QLNS\QuanLyNhanSu\bin\Debug\System.Data.SqlClient.dll
+D:\new folder\QLNS\QuanLyNhanSu\bin\Debug\System.Data.SqlClient.xml
+D:\new folder\QLNS\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.csproj.AssemblyReference.cache
+D:\new folder\QLNS\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.FormThemNV.resources
+D:\new folder\QLNS\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.frmDangNhap.resources
+D:\new folder\QLNS\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.DoiMatKhau.resources
+D:\new folder\QLNS\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.frmMain.resources
+D:\new folder\QLNS\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.frmThemTaiKhoan.resources
+D:\new folder\QLNS\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.Properties.Resources.resources
+D:\new folder\QLNS\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.csproj.GenerateResource.cache
+D:\new folder\QLNS\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.csproj.CoreCompileInputs.cache
+D:\new folder\QLNS\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.csproj.CopyComplete
+D:\new folder\QLNS\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.exe
+D:\new folder\QLNS\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.pdb
