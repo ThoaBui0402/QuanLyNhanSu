@@ -3,6 +3,9 @@ using System.Data;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
+
+//sua de thu nghiem
+
 namespace QuanLyNhanSu
 {
     public partial class frmThemPB : Form
@@ -48,6 +51,7 @@ namespace QuanLyNhanSu
         {
             load();
             this.Close();
+            
         }
 
         private void dgvThemPB_CellContentClick(object sender, DataGridViewCellEventArgs e)
