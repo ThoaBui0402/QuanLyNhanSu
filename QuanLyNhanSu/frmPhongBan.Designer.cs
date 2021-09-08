@@ -219,6 +219,7 @@ namespace QuanLyNhanSu
             this.btnThemPB.Size = new System.Drawing.Size(100, 37);
             this.btnThemPB.TabIndex = 12;
             this.btnThemPB.Text = "Thêm";
+            this.btnThemPB.Click += new System.EventHandler(this.btnThemPB_Click);
             // 
             // labelX4
             // 

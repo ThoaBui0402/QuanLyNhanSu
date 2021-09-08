@@ -49,5 +49,12 @@ namespace QuanLyNhanSu
 
             }
         }
+
+        private void btnThemPB_Click(object sender, EventArgs e)
+        {
+
+            frmThemPB frm = new frmThemPB();
+            frm.Show();
+        }
     }
 }

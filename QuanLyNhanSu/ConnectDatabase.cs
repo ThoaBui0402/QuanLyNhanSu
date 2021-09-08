@@ -19,7 +19,7 @@ namespace QuanLyNhanSu
 
         public static void ConnectDB()
         {
-             conn = new SqlConnection(@"Data Source=DESKTOP-VPF0AQ3;Initial Catalog=QuanLyNhanSu1;Integrated Security=True");
+             conn = new SqlConnection(@"Data Source=localhost\SQLEXPRESS01;Initial Catalog=QLNhanSu;Integrated Security=True");
             conn.Open();
         }
 
@@ -251,6 +251,70 @@ namespace QuanLyNhanSu
                 command.Cancel();
             }
         }
+        public static int checkPhongBan(string mapb)
+        {
+
+            string sql = "select * from PHONGBAN p where ((TenPB like '%' + @text + '%') or(DiaChi like '%' + @text + '%') or(MaPB like '%' + @text + '%') or(TenTP like '%' + @text + '%') or(MaTP like '%' + @text + '%'))";
+            using (SqlCommand command = new SqlCommand(sql, conn))
+            {
+                command.Parameters.Add(new SqlParameter("@text", mapb));
+                using (SqlDataReader dataReader = command.ExecuteReader())
+                {
+
+                    if (dataReader.Read() == true)
+                    {
+                        return 1;
+                    }
+
+
+
+                }
+            }
+            return 0;
+        }
+        public static string getTenTruongPhongTuMaTruongPhong(string matp)
+        {
+            if (matp == "") return "";
+            string sql = "select NHANVIEN.HoTen from NHANVIEN where NHANVIEN.MaNV = @matp";
+            using (SqlCommand command = new SqlCommand(sql, conn))
+            {
+                command.Parameters.Add(new SqlParameter("@matp", matp));
+                using (SqlDataReader dataReader = command.ExecuteReader())
+                {
+
+                    if (dataReader.Read() == true)
+                    {
+                        return dataReader[0].ToString();
+                    }
+                }
+            }
+            return "Không tồn tại";
+        }
+
+        public static void ThemPhongBan(PhongBan phongban)
+        {
+            string sql = "insert into PHONGBAN(MaPB, TenPB, DiaChi, MaTP, TenTP) values(@mapb, @tenpb, @diachi, @matp, @tentp)";
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            using (SqlCommand command = new SqlCommand(sql, conn))
+            {
+                command.Parameters.Add(new SqlParameter("@mapb", phongban.Mapb));
+                command.Parameters.Add(new SqlParameter("@tenpb", phongban.Tenpb));
+                command.Parameters.Add(new SqlParameter("@diachi", phongban.Diachi));
+                command.Parameters.Add(new SqlParameter("@matp", phongban.Matp));
+                command.Parameters.Add(new SqlParameter("@tentp", phongban.Tentp));
+
+                int kq = command.ExecuteNonQuery();
+                if (kq > 0)
+                {
+                    MessageBox.Show("Thêm phòng ban mới thành công!");
+                }
+                else MessageBox.Show("Thêm phòng ban mới thất bại!");
+                command.Cancel();
+            }
+
+
+        }
+
     }
 }
 

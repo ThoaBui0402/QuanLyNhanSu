@@ -93,3 +93,10 @@ D:\Hamilton\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.csproj.CoreCompileI
 D:\Hamilton\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.csproj.CopyComplete
 D:\Hamilton\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.exe
 D:\Hamilton\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.pdb
+D:\Ky1nam4\TTN\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.FormThemNV.resources
+D:\Ky1nam4\TTN\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.frmChucVu.resources
+D:\Ky1nam4\TTN\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.frmHopDong.resources
+D:\Ky1nam4\TTN\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.frmNhanVien.resources
+D:\Ky1nam4\TTN\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.frmPhongBan.resources
+D:\Ky1nam4\TTN\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.frmVTCV.resources
+D:\Ky1nam4\TTN\QuanLyNhanSu\QuanLyNhanSu\obj\Debug\QuanLyNhanSu.frmThemPB.resources
