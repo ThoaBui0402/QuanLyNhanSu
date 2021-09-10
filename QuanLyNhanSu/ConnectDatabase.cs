@@ -314,6 +314,21 @@ namespace QuanLyNhanSu
 
 
         }
+        public static void SuaPhongBan(PhongBan pb)
+        {
+            string sql = "UPDATE PHONGBAN set TenPB=@tenpb, DiaChi=@diadiem,MaTP=@matp,  TenTP=@tentp where MaPB=@mapb";
+
+            using (SqlCommand command = new SqlCommand(sql, conn))
+            {
+                command.Parameters.Add(new SqlParameter("@tenpb", pb.Tenpb));
+                command.Parameters.Add(new SqlParameter("@diadiem", pb.Diachi));
+                command.Parameters.Add(new SqlParameter("@tentp", pb.Tentp));
+                command.Parameters.Add(new SqlParameter("@matp", pb.Matp));
+                command.Parameters.Add(new SqlParameter("@mapb", pb.Mapb));
+                command.ExecuteNonQuery();
+                command.Cancel();
+            }
+        }
 
     }
 }

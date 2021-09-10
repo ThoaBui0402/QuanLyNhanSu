@@ -208,6 +208,7 @@ namespace QuanLyNhanSu
             this.btnSuaPB.Size = new System.Drawing.Size(124, 37);
             this.btnSuaPB.TabIndex = 13;
             this.btnSuaPB.Text = "Sửa";
+            this.btnSuaPB.Click += new System.EventHandler(this.btnSuaPB_Click);
             // 
             // btnThemPB
             // 

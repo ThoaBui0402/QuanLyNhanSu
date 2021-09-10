@@ -56,5 +56,12 @@ namespace QuanLyNhanSu
             frmThemPB frm = new frmThemPB();
             frm.Show();
         }
+
+        private void btnSuaPB_Click(object sender, EventArgs e)
+        {
+            PhongBan temp = new PhongBan(txtMPB.Text, txtTenPB.Text, txtdiadiem.Text, txtmaTP.Text, txtTenTP.Text);
+            ConnectDatabase.SuaPhongBan(temp);
+            dgvPhongBan.DataSource = ConnectDatabase.getAllPhongBan();
+        }
     }
 }
