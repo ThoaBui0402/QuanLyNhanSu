@@ -63,5 +63,10 @@ namespace QuanLyNhanSu
             ConnectDatabase.SuaPhongBan(temp);
             dgvPhongBan.DataSource = ConnectDatabase.getAllPhongBan();
         }
+
+        private void txtRimKiem_TextChanged(object sender, EventArgs e)
+        {
+            dgvPhongBan.DataSource = ConnectDatabase.timKiemPhongBan(txtRimKiem.Text);
+        }
     }
 }

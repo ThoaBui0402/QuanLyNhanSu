@@ -329,6 +329,19 @@ namespace QuanLyNhanSu
                 command.Cancel();
             }
         }
+        public static DataTable timKiemPhongBan(string pb)
+        {
+            string sql = "select * from PHONGBAN p where ((TenPB like '%' + @text + '%') or(DiaChi like '%' + @text + '%') or(MaPB like '%' + @text + '%') or(TenTP like '%' + @text + '%') or(MaTP like '%' + @text + '%'))";
+
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            cmd.Parameters.AddWithValue("text", pb);
+            cmd.ExecuteNonQuery();
+            cmd.CommandType = CommandType.Text;
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable sttable = new DataTable();
+            adapter.Fill(sttable);
+            return sttable;
+        }
 
     }
 }

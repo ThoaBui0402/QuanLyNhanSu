@@ -285,6 +285,7 @@ namespace QuanLyNhanSu
             this.txtRimKiem.Name = "txtRimKiem";
             this.txtRimKiem.Size = new System.Drawing.Size(616, 22);
             this.txtRimKiem.TabIndex = 25;
+            this.txtRimKiem.TextChanged += new System.EventHandler(this.txtRimKiem_TextChanged);
             // 
             // labTimKiem
             // 
