@@ -80,5 +80,10 @@ namespace QuanLyNhanSu
         {
             this.Close();
         }
+
+        private void txtMaNV_TextChanged(object sender, EventArgs e)
+        {
+            if (txtMaNV.Text == "") errorProvider1.SetError(txtMaNV, "Ban chua nhap ma NV!");
+        }
     }
 }

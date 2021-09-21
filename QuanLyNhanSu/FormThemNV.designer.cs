@@ -29,6 +29,7 @@ namespace QuanLyNhanSu
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.dgvThemNV = new System.Windows.Forms.DataGridView();
             this.txtTG = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX13 = new DevComponents.DotNetBar.LabelX();
@@ -58,9 +59,11 @@ namespace QuanLyNhanSu
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtTenNV = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvThemNV)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvThemNV
@@ -195,6 +198,7 @@ namespace QuanLyNhanSu
             this.txtMaNV.Name = "txtMaNV";
             this.txtMaNV.Size = new System.Drawing.Size(227, 22);
             this.txtMaNV.TabIndex = 19;
+            this.txtMaNV.TextChanged += new System.EventHandler(this.txtMaNV_TextChanged);
             // 
             // buttonX1
             // 
@@ -368,6 +372,10 @@ namespace QuanLyNhanSu
             this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // FormThemNV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -380,6 +388,7 @@ namespace QuanLyNhanSu
             ((System.ComponentModel.ISupportInitialize)(this.dgvThemNV)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -415,5 +424,6 @@ namespace QuanLyNhanSu
         private System.Windows.Forms.GroupBox groupBox2;
         private DevComponents.DotNetBar.Controls.TextBoxX txtTenNV;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
