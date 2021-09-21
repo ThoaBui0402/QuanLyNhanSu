@@ -85,5 +85,23 @@ namespace QuanLyNhanSu
         {
             if (txtMaNV.Text == "") errorProvider1.SetError(txtMaNV, "Ban chua nhap ma NV!");
         }
+        public bool isDigitalOnly(string str)
+        {
+            foreach( char c in str)
+            {
+                if (c < '0' || c > '9') return false;
+            }
+            return true;
+        }
+        private void txtSDT_TextChanged(object sender, EventArgs e)
+        {
+            if (isDigitalOnly(txtSDT.Text) == false)
+            {
+              
+                errorProvider2.SetError(txtSDT, "Ban chua nhap ma NV!");
+            } 
+                
+                
+        }
     }
 }
