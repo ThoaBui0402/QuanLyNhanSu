@@ -67,9 +67,11 @@ namespace QuanLyNhanSu
             // 
             this.dgvThemNV.BackgroundColor = System.Drawing.Color.LightYellow;
             this.dgvThemNV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvThemNV.Location = new System.Drawing.Point(436, 86);
+            this.dgvThemNV.Location = new System.Drawing.Point(581, 106);
+            this.dgvThemNV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvThemNV.Name = "dgvThemNV";
-            this.dgvThemNV.Size = new System.Drawing.Size(610, 406);
+            this.dgvThemNV.RowHeadersWidth = 51;
+            this.dgvThemNV.Size = new System.Drawing.Size(813, 500);
             this.dgvThemNV.TabIndex = 17;
             // 
             // txtTG
@@ -78,16 +80,18 @@ namespace QuanLyNhanSu
             // 
             // 
             this.txtTG.Border.Class = "TextBoxBorder";
-            this.txtTG.Location = new System.Drawing.Point(124, 306);
+            this.txtTG.Location = new System.Drawing.Point(165, 377);
+            this.txtTG.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTG.Name = "txtTG";
-            this.txtTG.Size = new System.Drawing.Size(227, 22);
+            this.txtTG.Size = new System.Drawing.Size(303, 26);
             this.txtTG.TabIndex = 85;
             // 
             // labelX13
             // 
-            this.labelX13.Location = new System.Drawing.Point(14, 310);
+            this.labelX13.Location = new System.Drawing.Point(19, 382);
+            this.labelX13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelX13.Name = "labelX13";
-            this.labelX13.Size = new System.Drawing.Size(98, 23);
+            this.labelX13.Size = new System.Drawing.Size(131, 28);
             this.labelX13.TabIndex = 84;
             this.labelX13.Text = "Tôn giáo";
             // 
@@ -97,16 +101,18 @@ namespace QuanLyNhanSu
             // 
             // 
             this.txtDT.Border.Class = "TextBoxBorder";
-            this.txtDT.Location = new System.Drawing.Point(125, 272);
+            this.txtDT.Location = new System.Drawing.Point(167, 335);
+            this.txtDT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDT.Name = "txtDT";
-            this.txtDT.Size = new System.Drawing.Size(227, 22);
+            this.txtDT.Size = new System.Drawing.Size(303, 26);
             this.txtDT.TabIndex = 46;
             // 
             // labelX10
             // 
-            this.labelX10.Location = new System.Drawing.Point(14, 276);
+            this.labelX10.Location = new System.Drawing.Point(19, 340);
+            this.labelX10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelX10.Name = "labelX10";
-            this.labelX10.Size = new System.Drawing.Size(95, 18);
+            this.labelX10.Size = new System.Drawing.Size(127, 22);
             this.labelX10.TabIndex = 45;
             this.labelX10.Text = "Dân tộc";
             // 
@@ -116,16 +122,18 @@ namespace QuanLyNhanSu
             // 
             // 
             this.txtSDT.Border.Class = "TextBoxBorder";
-            this.txtSDT.Location = new System.Drawing.Point(124, 244);
+            this.txtSDT.Location = new System.Drawing.Point(165, 300);
+            this.txtSDT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtSDT.Name = "txtSDT";
-            this.txtSDT.Size = new System.Drawing.Size(227, 22);
+            this.txtSDT.Size = new System.Drawing.Size(303, 26);
             this.txtSDT.TabIndex = 42;
             // 
             // labelX12
             // 
-            this.labelX12.Location = new System.Drawing.Point(14, 245);
+            this.labelX12.Location = new System.Drawing.Point(19, 302);
+            this.labelX12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelX12.Name = "labelX12";
-            this.labelX12.Size = new System.Drawing.Size(70, 23);
+            this.labelX12.Size = new System.Drawing.Size(93, 28);
             this.labelX12.TabIndex = 41;
             this.labelX12.Text = "SĐT";
             // 
@@ -135,25 +143,28 @@ namespace QuanLyNhanSu
             // 
             // 
             this.txtMaPB.Border.Class = "TextBoxBorder";
-            this.txtMaPB.Location = new System.Drawing.Point(124, 184);
+            this.txtMaPB.Location = new System.Drawing.Point(165, 226);
+            this.txtMaPB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtMaPB.Name = "txtMaPB";
-            this.txtMaPB.Size = new System.Drawing.Size(227, 22);
+            this.txtMaPB.Size = new System.Drawing.Size(303, 26);
             this.txtMaPB.TabIndex = 40;
             // 
             // dateNS
             // 
-            this.dateNS.Location = new System.Drawing.Point(123, 130);
+            this.dateNS.Location = new System.Drawing.Point(164, 160);
+            this.dateNS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dateNS.Name = "dateNS";
-            this.dateNS.Size = new System.Drawing.Size(227, 22);
+            this.dateNS.Size = new System.Drawing.Size(301, 26);
             this.dateNS.TabIndex = 39;
             // 
             // btnHienThi
             // 
             this.btnHienThi.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnHienThi.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnHienThi.Location = new System.Drawing.Point(268, 345);
+            this.btnHienThi.Location = new System.Drawing.Point(357, 425);
+            this.btnHienThi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnHienThi.Name = "btnHienThi";
-            this.btnHienThi.Size = new System.Drawing.Size(85, 43);
+            this.btnHienThi.Size = new System.Drawing.Size(113, 53);
             this.btnHienThi.TabIndex = 37;
             this.btnHienThi.Text = "Hiển thị";
             // 
@@ -162,26 +173,29 @@ namespace QuanLyNhanSu
             this.btnThemNV.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnThemNV.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.btnThemNV.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemNV.Location = new System.Drawing.Point(177, 345);
+            this.btnThemNV.Location = new System.Drawing.Point(236, 425);
+            this.btnThemNV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnThemNV.Name = "btnThemNV";
-            this.btnThemNV.Size = new System.Drawing.Size(82, 43);
+            this.btnThemNV.Size = new System.Drawing.Size(109, 53);
             this.btnThemNV.TabIndex = 35;
             this.btnThemNV.Text = "Thêm";
             this.btnThemNV.Click += new System.EventHandler(this.btnThemNV_Click);
             // 
             // labelX1
             // 
-            this.labelX1.Location = new System.Drawing.Point(13, 23);
+            this.labelX1.Location = new System.Drawing.Point(17, 28);
+            this.labelX1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(95, 23);
+            this.labelX1.Size = new System.Drawing.Size(127, 28);
             this.labelX1.TabIndex = 18;
             this.labelX1.Text = "Mã nhân viên";
             // 
             // labelX8
             // 
-            this.labelX8.Location = new System.Drawing.Point(13, 181);
+            this.labelX8.Location = new System.Drawing.Point(17, 223);
+            this.labelX8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelX8.Name = "labelX8";
-            this.labelX8.Size = new System.Drawing.Size(95, 29);
+            this.labelX8.Size = new System.Drawing.Size(127, 36);
             this.labelX8.TabIndex = 33;
             this.labelX8.Text = "Mã Phòng Ban";
             // 
@@ -191,9 +205,10 @@ namespace QuanLyNhanSu
             // 
             // 
             this.txtMaNV.Border.Class = "TextBoxBorder";
-            this.txtMaNV.Location = new System.Drawing.Point(123, 23);
+            this.txtMaNV.Location = new System.Drawing.Point(164, 28);
+            this.txtMaNV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtMaNV.Name = "txtMaNV";
-            this.txtMaNV.Size = new System.Drawing.Size(227, 22);
+            this.txtMaNV.Size = new System.Drawing.Size(303, 26);
             this.txtMaNV.TabIndex = 19;
             // 
             // buttonX1
@@ -201,9 +216,10 @@ namespace QuanLyNhanSu
             this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.buttonX1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonX1.Location = new System.Drawing.Point(9, 8);
+            this.buttonX1.Location = new System.Drawing.Point(12, 10);
+            this.buttonX1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonX1.Name = "buttonX1";
-            this.buttonX1.Size = new System.Drawing.Size(72, 24);
+            this.buttonX1.Size = new System.Drawing.Size(96, 30);
             this.buttonX1.TabIndex = 46;
             this.buttonX1.Text = "Thoát";
             this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
@@ -212,33 +228,37 @@ namespace QuanLyNhanSu
             // 
             this.labelX9.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX9.ImagePosition = DevComponents.DotNetBar.eImagePosition.Right;
-            this.labelX9.Location = new System.Drawing.Point(386, 19);
+            this.labelX9.Location = new System.Drawing.Point(515, 23);
+            this.labelX9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelX9.Name = "labelX9";
-            this.labelX9.Size = new System.Drawing.Size(270, 29);
+            this.labelX9.Size = new System.Drawing.Size(280, 36);
             this.labelX9.TabIndex = 20;
             this.labelX9.Text = "THÊM NHÂN VIÊN MỚI";
             // 
             // labelX7
             // 
-            this.labelX7.Location = new System.Drawing.Point(13, 106);
+            this.labelX7.Location = new System.Drawing.Point(17, 130);
+            this.labelX7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelX7.Name = "labelX7";
-            this.labelX7.Size = new System.Drawing.Size(70, 23);
+            this.labelX7.Size = new System.Drawing.Size(93, 28);
             this.labelX7.TabIndex = 32;
             this.labelX7.Text = "Giới Tính";
             // 
             // labelX2
             // 
-            this.labelX2.Location = new System.Drawing.Point(14, 49);
+            this.labelX2.Location = new System.Drawing.Point(19, 60);
+            this.labelX2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(95, 23);
+            this.labelX2.Size = new System.Drawing.Size(127, 28);
             this.labelX2.TabIndex = 20;
             this.labelX2.Text = "Tên nhân viên";
             // 
             // labelX3
             // 
-            this.labelX3.Location = new System.Drawing.Point(14, 75);
+            this.labelX3.Location = new System.Drawing.Point(19, 92);
+            this.labelX3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelX3.Name = "labelX3";
-            this.labelX3.Size = new System.Drawing.Size(70, 23);
+            this.labelX3.Size = new System.Drawing.Size(93, 28);
             this.labelX3.TabIndex = 22;
             this.labelX3.Text = "Bằng cấp";
             // 
@@ -248,9 +268,10 @@ namespace QuanLyNhanSu
             // 
             // 
             this.txtCMT.Border.Class = "TextBoxBorder";
-            this.txtCMT.Location = new System.Drawing.Point(123, 215);
+            this.txtCMT.Location = new System.Drawing.Point(164, 265);
+            this.txtCMT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCMT.Name = "txtCMT";
-            this.txtCMT.Size = new System.Drawing.Size(227, 22);
+            this.txtCMT.Size = new System.Drawing.Size(303, 26);
             this.txtCMT.TabIndex = 29;
             // 
             // txtBangCap
@@ -259,24 +280,27 @@ namespace QuanLyNhanSu
             // 
             // 
             this.txtBangCap.Border.Class = "TextBoxBorder";
-            this.txtBangCap.Location = new System.Drawing.Point(123, 75);
+            this.txtBangCap.Location = new System.Drawing.Point(164, 92);
+            this.txtBangCap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtBangCap.Name = "txtBangCap";
-            this.txtBangCap.Size = new System.Drawing.Size(227, 22);
+            this.txtBangCap.Size = new System.Drawing.Size(303, 26);
             this.txtBangCap.TabIndex = 23;
             // 
             // labelX6
             // 
-            this.labelX6.Location = new System.Drawing.Point(14, 217);
+            this.labelX6.Location = new System.Drawing.Point(19, 267);
+            this.labelX6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelX6.Name = "labelX6";
-            this.labelX6.Size = new System.Drawing.Size(70, 23);
+            this.labelX6.Size = new System.Drawing.Size(93, 28);
             this.labelX6.TabIndex = 28;
             this.labelX6.Text = "CMTND";
             // 
             // labelX4
             // 
-            this.labelX4.Location = new System.Drawing.Point(12, 132);
+            this.labelX4.Location = new System.Drawing.Point(16, 162);
+            this.labelX4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelX4.Name = "labelX4";
-            this.labelX4.Size = new System.Drawing.Size(70, 23);
+            this.labelX4.Size = new System.Drawing.Size(93, 28);
             this.labelX4.TabIndex = 24;
             this.labelX4.Text = "Ngày Sinh";
             // 
@@ -286,9 +310,10 @@ namespace QuanLyNhanSu
             // 
             // 
             this.txtDC.Border.Class = "TextBoxBorder";
-            this.txtDC.Location = new System.Drawing.Point(123, 156);
+            this.txtDC.Location = new System.Drawing.Point(164, 192);
+            this.txtDC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDC.Name = "txtDC";
-            this.txtDC.Size = new System.Drawing.Size(227, 22);
+            this.txtDC.Size = new System.Drawing.Size(303, 26);
             this.txtDC.TabIndex = 27;
             // 
             // txtGT
@@ -297,16 +322,18 @@ namespace QuanLyNhanSu
             // 
             // 
             this.txtGT.Border.Class = "TextBoxBorder";
-            this.txtGT.Location = new System.Drawing.Point(123, 104);
+            this.txtGT.Location = new System.Drawing.Point(164, 128);
+            this.txtGT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtGT.Name = "txtGT";
-            this.txtGT.Size = new System.Drawing.Size(227, 22);
+            this.txtGT.Size = new System.Drawing.Size(303, 26);
             this.txtGT.TabIndex = 25;
             // 
             // labelX5
             // 
-            this.labelX5.Location = new System.Drawing.Point(12, 160);
+            this.labelX5.Location = new System.Drawing.Point(16, 197);
+            this.labelX5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelX5.Name = "labelX5";
-            this.labelX5.Size = new System.Drawing.Size(70, 23);
+            this.labelX5.Size = new System.Drawing.Size(93, 28);
             this.labelX5.TabIndex = 26;
             this.labelX5.Text = "Địa chỉ";
             // 
@@ -337,9 +364,11 @@ namespace QuanLyNhanSu
             this.groupBox2.Controls.Add(this.txtDC);
             this.groupBox2.Controls.Add(this.txtGT);
             this.groupBox2.Controls.Add(this.labelX5);
-            this.groupBox2.Location = new System.Drawing.Point(27, 86);
+            this.groupBox2.Location = new System.Drawing.Point(36, 106);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(383, 406);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Size = new System.Drawing.Size(511, 500);
             this.groupBox2.TabIndex = 19;
             this.groupBox2.TabStop = false;
             // 
@@ -349,9 +378,10 @@ namespace QuanLyNhanSu
             // 
             // 
             this.txtTenNV.Border.Class = "TextBoxBorder";
-            this.txtTenNV.Location = new System.Drawing.Point(123, 49);
+            this.txtTenNV.Location = new System.Drawing.Point(164, 60);
+            this.txtTenNV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTenNV.Name = "txtTenNV";
-            this.txtTenNV.Size = new System.Drawing.Size(227, 22);
+            this.txtTenNV.Size = new System.Drawing.Size(303, 26);
             this.txtTenNV.TabIndex = 21;
             // 
             // groupBox1
@@ -361,21 +391,27 @@ namespace QuanLyNhanSu
             this.groupBox1.Controls.Add(this.labelX9);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.dgvThemNV);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(15, 5);
+            this.groupBox1.Location = new System.Drawing.Point(0, 0);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1094, 499);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(1499, 625);
             this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
             // 
             // FormThemNV
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1124, 508);
+            this.ClientSize = new System.Drawing.Size(1499, 625);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormThemNV";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormThemNV";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormThemNV_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvThemNV)).EndInit();
             this.groupBox2.ResumeLayout(false);
