@@ -81,10 +81,10 @@ namespace QuanLyNhanSu
             // labelX1
             // 
             this.labelX1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX1.Location = new System.Drawing.Point(155, 0);
+            this.labelX1.Location = new System.Drawing.Point(155, 13);
             this.labelX1.Margin = new System.Windows.Forms.Padding(4);
             this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(328, 28);
+            this.labelX1.Size = new System.Drawing.Size(229, 28);
             this.labelX1.TabIndex = 0;
             this.labelX1.Text = "ĐỔI MẬT KHẨU CÁ NHÂN";
             // 
