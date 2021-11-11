@@ -29,10 +29,11 @@ namespace QuanLyNhanSu
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnCCPB = new DevComponents.DotNetBar.ButtonX();
             this.txtTenPB = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtMPB = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
@@ -42,48 +43,49 @@ namespace QuanLyNhanSu
             this.labelX6 = new DevComponents.DotNetBar.LabelX();
             this.btnTrolai = new DevComponents.DotNetBar.ButtonX();
             this.btnXoaPB = new DevComponents.DotNetBar.ButtonX();
-            this.btnHienThi = new DevComponents.DotNetBar.ButtonX();
-            this.btnSuaPB = new DevComponents.DotNetBar.ButtonX();
-            this.btnThemPB = new DevComponents.DotNetBar.ButtonX();
-            this.labelX4 = new DevComponents.DotNetBar.LabelX();
-            this.txtTenTP = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.labelX2 = new DevComponents.DotNetBar.LabelX();
-            this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.labelX5 = new DevComponents.DotNetBar.LabelX();
             this.txtRimKiem = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labTimKiem = new DevComponents.DotNetBar.LabelX();
+            this.btnHienThi = new DevComponents.DotNetBar.ButtonX();
+            this.btnSuaPB = new DevComponents.DotNetBar.ButtonX();
+            this.btnThemPB = new DevComponents.DotNetBar.ButtonX();
+            this.txtTenTP = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.labelX2 = new DevComponents.DotNetBar.LabelX();
+            this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.dgvPhongBan = new DevComponents.DotNetBar.Controls.DataGridViewX();
-            this.btnCCPB = new DevComponents.DotNetBar.ButtonX();
-            this.groupBox2.SuspendLayout();
+            this.labelX4 = new DevComponents.DotNetBar.LabelX();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPhongBan)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox2
+            // panel1
             // 
-            this.groupBox2.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.groupBox2.Controls.Add(this.txtTenPB);
-            this.groupBox2.Controls.Add(this.txtMPB);
-            this.groupBox2.Controls.Add(this.labelX3);
-            this.groupBox2.Controls.Add(this.txtmaTP);
-            this.groupBox2.Controls.Add(this.labelX7);
-            this.groupBox2.Controls.Add(this.txtdiadiem);
-            this.groupBox2.Controls.Add(this.labelX6);
-            this.groupBox2.Controls.Add(this.btnTrolai);
-            this.groupBox2.Controls.Add(this.btnXoaPB);
-            this.groupBox2.Controls.Add(this.btnHienThi);
-            this.groupBox2.Controls.Add(this.btnSuaPB);
-            this.groupBox2.Controls.Add(this.btnThemPB);
-            this.groupBox2.Controls.Add(this.labelX4);
-            this.groupBox2.Controls.Add(this.txtTenTP);
-            this.groupBox2.Controls.Add(this.labelX2);
-            this.groupBox2.Controls.Add(this.labelX1);
-            this.groupBox2.Location = new System.Drawing.Point(999, 111);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(424, 485);
-            this.groupBox2.TabIndex = 21;
-            this.groupBox2.TabStop = false;
+            this.panel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel1.Controls.Add(this.btnCCPB);
+            this.panel1.Controls.Add(this.labelX5);
+            this.panel1.Controls.Add(this.txtRimKiem);
+            this.panel1.Controls.Add(this.labTimKiem);
+            this.panel1.Controls.Add(this.dgvPhongBan);
+            this.panel1.Controls.Add(this.groupBox2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1255, 615);
+            this.panel1.TabIndex = 0;
+            // 
+            // btnCCPB
+            // 
+            this.btnCCPB.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnCCPB.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnCCPB.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCCPB.Location = new System.Drawing.Point(799, 63);
+            this.btnCCPB.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCCPB.Name = "btnCCPB";
+            this.btnCCPB.Size = new System.Drawing.Size(424, 37);
+            this.btnCCPB.TabIndex = 32;
+            this.btnCCPB.Text = "CƠ CẤU PHÒNG BAN";
             // 
             // txtTenPB
             // 
@@ -167,12 +169,13 @@ namespace QuanLyNhanSu
             // 
             this.btnTrolai.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnTrolai.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnTrolai.Location = new System.Drawing.Point(283, 436);
+            this.btnTrolai.Location = new System.Drawing.Point(288, 434);
             this.btnTrolai.Margin = new System.Windows.Forms.Padding(4);
             this.btnTrolai.Name = "btnTrolai";
             this.btnTrolai.Size = new System.Drawing.Size(112, 31);
             this.btnTrolai.TabIndex = 33;
             this.btnTrolai.Text = "Trở lại";
+            this.btnTrolai.Click += new System.EventHandler(this.btnTrolai_Click);
             // 
             // btnXoaPB
             // 
@@ -184,7 +187,40 @@ namespace QuanLyNhanSu
             this.btnXoaPB.Size = new System.Drawing.Size(100, 37);
             this.btnXoaPB.TabIndex = 15;
             this.btnXoaPB.Text = "Xóa";
-            this.btnXoaPB.Click += new System.EventHandler(this.btnXoaPB_Click);
+            this.btnXoaPB.Click += new System.EventHandler(this.btnSuaPB_Click);
+            // 
+            // labelX5
+            // 
+            this.labelX5.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX5.Location = new System.Drawing.Point(445, 15);
+            this.labelX5.Margin = new System.Windows.Forms.Padding(4);
+            this.labelX5.Name = "labelX5";
+            this.labelX5.Size = new System.Drawing.Size(334, 28);
+            this.labelX5.TabIndex = 28;
+            this.labelX5.Text = "QUẢN LÝ PHÒNG BAN";
+            // 
+            // txtRimKiem
+            // 
+            // 
+            // 
+            // 
+            this.txtRimKiem.Border.Class = "TextBoxBorder";
+            this.txtRimKiem.Location = new System.Drawing.Point(136, 77);
+            this.txtRimKiem.Margin = new System.Windows.Forms.Padding(4);
+            this.txtRimKiem.Name = "txtRimKiem";
+            this.txtRimKiem.Size = new System.Drawing.Size(616, 22);
+            this.txtRimKiem.TabIndex = 31;
+            this.txtRimKiem.TextChanged += new System.EventHandler(this.txtRimKiem_TextChanged);
+            // 
+            // labTimKiem
+            // 
+            this.labTimKiem.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labTimKiem.Location = new System.Drawing.Point(32, 62);
+            this.labTimKiem.Margin = new System.Windows.Forms.Padding(4);
+            this.labTimKiem.Name = "labTimKiem";
+            this.labTimKiem.Size = new System.Drawing.Size(96, 44);
+            this.labTimKiem.TabIndex = 30;
+            this.labTimKiem.Text = "Tìm kiếm";
             // 
             // btnHienThi
             // 
@@ -220,17 +256,7 @@ namespace QuanLyNhanSu
             this.btnThemPB.Size = new System.Drawing.Size(100, 37);
             this.btnThemPB.TabIndex = 12;
             this.btnThemPB.Text = "Thêm";
-            this.btnThemPB.Click += new System.EventHandler(this.btnThemPB_Click);
-            // 
-            // labelX4
-            // 
-            this.labelX4.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX4.Location = new System.Drawing.Point(53, 353);
-            this.labelX4.Margin = new System.Windows.Forms.Padding(4);
-            this.labelX4.Name = "labelX4";
-            this.labelX4.Size = new System.Drawing.Size(95, 28);
-            this.labelX4.TabIndex = 7;
-            this.labelX4.Text = "Chức năng";
+            this.btnThemPB.TextChanged += new System.EventHandler(this.btnThemPB_Click);
             // 
             // txtTenTP
             // 
@@ -264,112 +290,106 @@ namespace QuanLyNhanSu
             this.labelX1.TabIndex = 2;
             this.labelX1.Text = "Phòng ban";
             // 
-            // labelX5
-            // 
-            this.labelX5.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX5.Location = new System.Drawing.Point(667, 18);
-            this.labelX5.Margin = new System.Windows.Forms.Padding(4);
-            this.labelX5.Name = "labelX5";
-            this.labelX5.Size = new System.Drawing.Size(444, 28);
-            this.labelX5.TabIndex = 22;
-            this.labelX5.Text = "QUẢN LÝ PHÒNG BAN";
-            // 
-            // txtRimKiem
-            // 
-            // 
-            // 
-            // 
-            this.txtRimKiem.Border.Class = "TextBoxBorder";
-            this.txtRimKiem.Location = new System.Drawing.Point(207, 73);
-            this.txtRimKiem.Margin = new System.Windows.Forms.Padding(4);
-            this.txtRimKiem.Name = "txtRimKiem";
-            this.txtRimKiem.Size = new System.Drawing.Size(616, 22);
-            this.txtRimKiem.TabIndex = 25;
-            this.txtRimKiem.TextChanged += new System.EventHandler(this.txtRimKiem_TextChanged);
-            // 
-            // labTimKiem
-            // 
-            this.labTimKiem.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labTimKiem.Location = new System.Drawing.Point(67, 60);
-            this.labTimKiem.Margin = new System.Windows.Forms.Padding(4);
-            this.labTimKiem.Name = "labTimKiem";
-            this.labTimKiem.Size = new System.Drawing.Size(145, 44);
-            this.labTimKiem.TabIndex = 24;
-            this.labTimKiem.Text = "Tìm kiếm";
-            // 
             // dgvPhongBan
             // 
             this.dgvPhongBan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvPhongBan.BackgroundColor = System.Drawing.SystemColors.InactiveBorder;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPhongBan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle22.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle22.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPhongBan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle22;
             this.dgvPhongBan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvPhongBan.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle23.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle23.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvPhongBan.DefaultCellStyle = dataGridViewCellStyle23;
             this.dgvPhongBan.EnableHeadersVisualStyles = false;
             this.dgvPhongBan.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
-            this.dgvPhongBan.Location = new System.Drawing.Point(148, 111);
+            this.dgvPhongBan.Location = new System.Drawing.Point(52, 114);
             this.dgvPhongBan.Margin = new System.Windows.Forms.Padding(4);
             this.dgvPhongBan.Name = "dgvPhongBan";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPhongBan.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle24.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPhongBan.RowHeadersDefaultCellStyle = dataGridViewCellStyle24;
             this.dgvPhongBan.RowHeadersWidth = 51;
             this.dgvPhongBan.Size = new System.Drawing.Size(721, 485);
-            this.dgvPhongBan.TabIndex = 23;
-            this.dgvPhongBan.SelectionChanged += new System.EventHandler(this.dgvPhongBan_SelectionChanged);
+            this.dgvPhongBan.TabIndex = 29;
             // 
-            // btnCCPB
+            // labelX4
             // 
-            this.btnCCPB.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnCCPB.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnCCPB.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCCPB.Location = new System.Drawing.Point(999, 60);
-            this.btnCCPB.Margin = new System.Windows.Forms.Padding(4);
-            this.btnCCPB.Name = "btnCCPB";
-            this.btnCCPB.Size = new System.Drawing.Size(424, 37);
-            this.btnCCPB.TabIndex = 26;
-            this.btnCCPB.Text = "CƠ CẤU PHÒNG BAN";
+            this.labelX4.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX4.Location = new System.Drawing.Point(53, 353);
+            this.labelX4.Margin = new System.Windows.Forms.Padding(4);
+            this.labelX4.Name = "labelX4";
+            this.labelX4.Size = new System.Drawing.Size(95, 28);
+            this.labelX4.TabIndex = 7;
+            this.labelX4.Text = "Chức năng";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.groupBox2.Controls.Add(this.txtTenPB);
+            this.groupBox2.Controls.Add(this.txtMPB);
+            this.groupBox2.Controls.Add(this.labelX3);
+            this.groupBox2.Controls.Add(this.txtmaTP);
+            this.groupBox2.Controls.Add(this.labelX7);
+            this.groupBox2.Controls.Add(this.txtdiadiem);
+            this.groupBox2.Controls.Add(this.labelX6);
+            this.groupBox2.Controls.Add(this.btnTrolai);
+            this.groupBox2.Controls.Add(this.btnXoaPB);
+            this.groupBox2.Controls.Add(this.btnHienThi);
+            this.groupBox2.Controls.Add(this.btnSuaPB);
+            this.groupBox2.Controls.Add(this.btnThemPB);
+            this.groupBox2.Controls.Add(this.labelX4);
+            this.groupBox2.Controls.Add(this.txtTenTP);
+            this.groupBox2.Controls.Add(this.labelX2);
+            this.groupBox2.Controls.Add(this.labelX1);
+            this.groupBox2.Location = new System.Drawing.Point(799, 114);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Size = new System.Drawing.Size(424, 485);
+            this.groupBox2.TabIndex = 27;
+            this.groupBox2.TabStop = false;
             // 
             // frmPhongBan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1491, 615);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.labelX5);
-            this.Controls.Add(this.txtRimKiem);
-            this.Controls.Add(this.labTimKiem);
-            this.Controls.Add(this.dgvPhongBan);
-            this.Controls.Add(this.btnCCPB);
+            this.ClientSize = new System.Drawing.Size(1255, 615);
+            this.Controls.Add(this.panel1);
             this.Name = "frmPhongBan";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Phong ban";
             this.Load += new System.EventHandler(this.frmPhongBan_Load);
-            this.groupBox2.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPhongBan)).EndInit();
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
+        private System.Windows.Forms.Panel panel1;
+        private DevComponents.DotNetBar.ButtonX btnCCPB;
+        private DevComponents.DotNetBar.LabelX labelX5;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtRimKiem;
+        private DevComponents.DotNetBar.LabelX labTimKiem;
+        private DevComponents.DotNetBar.Controls.DataGridViewX dgvPhongBan;
         private System.Windows.Forms.GroupBox groupBox2;
         private DevComponents.DotNetBar.Controls.TextBoxX txtTenPB;
         private DevComponents.DotNetBar.Controls.TextBoxX txtMPB;
@@ -387,10 +407,5 @@ namespace QuanLyNhanSu
         private DevComponents.DotNetBar.Controls.TextBoxX txtTenTP;
         private DevComponents.DotNetBar.LabelX labelX2;
         private DevComponents.DotNetBar.LabelX labelX1;
-        private DevComponents.DotNetBar.LabelX labelX5;
-        private DevComponents.DotNetBar.Controls.TextBoxX txtRimKiem;
-        private DevComponents.DotNetBar.LabelX labTimKiem;
-        private DevComponents.DotNetBar.Controls.DataGridViewX dgvPhongBan;
-        private DevComponents.DotNetBar.ButtonX btnCCPB;
     }
 }

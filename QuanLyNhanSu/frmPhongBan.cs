@@ -68,5 +68,10 @@ namespace QuanLyNhanSu
         {
             dgvPhongBan.DataSource = ConnectDatabase.timKiemPhongBan(txtRimKiem.Text);
         }
+
+        private void btnTrolai_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }
