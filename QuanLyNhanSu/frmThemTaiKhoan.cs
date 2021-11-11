@@ -12,7 +12,11 @@ namespace QuanLyNhanSu
 {
     public partial class frmThemTaiKhoan : Form
     {
-      
+        public frmThemTaiKhoan()
+        {
+            InitializeComponent();
+        }
+
       
 
         private void labelX3_Click(object sender, EventArgs e)
@@ -22,7 +26,9 @@ namespace QuanLyNhanSu
 
         private void btnThemMoi_Click_1(object sender, EventArgs e)
         {
-           
+            DangNhap temp = new DangNhap( txtTenDN.Text, txtMK.Text, txtmanv.Text);
+
+            ConnectDatabase.ThemTaiKhoan(temp);
         }
 
         private void buttonX1_Click(object sender, EventArgs e)
@@ -30,7 +36,7 @@ namespace QuanLyNhanSu
             this.Close();
         }
 
-        private void frmThemTaiKhoan_Load(object sender, EventArgs e)
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }

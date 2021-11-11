@@ -72,7 +72,7 @@ namespace QuanLyNhanSu
         }
         public static DataTable getNhanVienTimDuoc(string str)
         {
-            string sql = string.Format("select * from NHANVIEN where MaNV='{0}' or HoTen=N'{0}' or DiaChi=N'{0}' or SDT='{0}' or MaPB='{0}' or CMTND='{0}'", str);
+            string sql = string.Format("select * from NHANVIEN where MaNV='{0}' or HoTen like N'%{0}%' or DiaChi like N'%{0}%' or SDT='{0}' or MaPB='{0}' or CMTND='{0}'", str);
             SqlDataAdapter dap = new SqlDataAdapter(sql, conn);
             DataTable dt = new DataTable();
             dap.Fill(dt);
@@ -341,6 +341,25 @@ namespace QuanLyNhanSu
             DataTable sttable = new DataTable();
             adapter.Fill(sttable);
             return sttable;
+        }
+        public static void ThemTaiKhoan(DangNhap dn)
+        {
+            string sql = "insert into DANGNHAP(TenDN, MatKhau, MaNV) values(@tendn, @mk, @manv)";
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            using (SqlCommand command = new SqlCommand(sql, conn))
+            {
+                command.Parameters.Add(new SqlParameter("@tendn", dn.TenDN));
+                command.Parameters.Add(new SqlParameter("@mk", dn.MatKhau));
+                command.Parameters.Add(new SqlParameter("@manv", dn.MaNV));
+
+                int kq = command.ExecuteNonQuery();
+                if (kq > 0)
+                {
+                    MessageBox.Show("Thêm tài khoản mới thành công!");
+                }
+                else MessageBox.Show("Thêm tài khoản mới thất bại!");
+                command.Cancel();
+            }
         }
 
     }

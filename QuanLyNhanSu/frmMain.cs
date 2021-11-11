@@ -56,7 +56,7 @@ namespace QuanLyNhanSu
 
         private void thêmTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+           
         }
 
         private void đổiMậtKhẩuToolStripMenuItem_Click(object sender, EventArgs e)
@@ -105,6 +105,12 @@ namespace QuanLyNhanSu
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void bnt_themtk_Click(object sender, EventArgs e)
+        {
+            frmThemTaiKhoan frm = new frmThemTaiKhoan();
+            frm.Show();
         }
     }
 }
