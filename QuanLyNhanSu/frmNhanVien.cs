@@ -500,6 +500,7 @@ namespace QuanLyNhanSu
             this.btnThoat.Size = new System.Drawing.Size(89, 34);
             this.btnThoat.TabIndex = 120;
             this.btnThoat.Text = "Thoát";
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnHienThi
             // 
@@ -512,6 +513,7 @@ namespace QuanLyNhanSu
             this.btnHienThi.Size = new System.Drawing.Size(91, 34);
             this.btnHienThi.TabIndex = 119;
             this.btnHienThi.Text = "Hiển thị";
+            this.btnHienThi.Click += new System.EventHandler(this.btnHienThi_Click);
             // 
             // btnXoa
             // 
@@ -524,6 +526,7 @@ namespace QuanLyNhanSu
             this.btnXoa.Size = new System.Drawing.Size(89, 34);
             this.btnXoa.TabIndex = 118;
             this.btnXoa.Text = "Xóa";
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSuaPB
             // 
@@ -536,6 +539,7 @@ namespace QuanLyNhanSu
             this.btnSuaPB.Size = new System.Drawing.Size(91, 34);
             this.btnSuaPB.TabIndex = 117;
             this.btnSuaPB.Text = "Sửa";
+            this.btnSuaPB.Click += new System.EventHandler(this.btnSuaPB_Click);
             // 
             // panel1
             // 
@@ -682,6 +686,5 @@ namespace QuanLyNhanSu
             txtTG.Text = row.Cells[9].Value.ToString();
             txtMaNV.Enabled = false;
         }
-        
     }
 }

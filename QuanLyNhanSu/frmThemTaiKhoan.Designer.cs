@@ -59,13 +59,14 @@
             this.groupBox1.Controls.Add(this.labelX3);
             this.groupBox1.Controls.Add(this.labelX2);
             this.groupBox1.Controls.Add(this.Tên);
-            this.groupBox1.Location = new System.Drawing.Point(16, 36);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Location = new System.Drawing.Point(13, 13);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(589, 384);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // buttonX1
             // 
@@ -73,7 +74,7 @@
             this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.buttonX1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonX1.Location = new System.Drawing.Point(364, 279);
-            this.buttonX1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonX1.Margin = new System.Windows.Forms.Padding(4);
             this.buttonX1.Name = "buttonX1";
             this.buttonX1.Size = new System.Drawing.Size(136, 44);
             this.buttonX1.TabIndex = 20;
@@ -83,17 +84,17 @@
             // labelX5
             // 
             this.labelX5.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX5.Location = new System.Drawing.Point(155, 23);
-            this.labelX5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.labelX5.Location = new System.Drawing.Point(196, 23);
+            this.labelX5.Margin = new System.Windows.Forms.Padding(4);
             this.labelX5.Name = "labelX5";
-            this.labelX5.Size = new System.Drawing.Size(345, 59);
+            this.labelX5.Size = new System.Drawing.Size(208, 59);
             this.labelX5.TabIndex = 11;
             this.labelX5.Text = "ĐĂNG KÍ TÀI KHOẢN";
             // 
             // labelX1
             // 
             this.labelX1.Location = new System.Drawing.Point(220, 244);
-            this.labelX1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.labelX1.Margin = new System.Windows.Forms.Padding(4);
             this.labelX1.Name = "labelX1";
             this.labelX1.Size = new System.Drawing.Size(247, 28);
             this.labelX1.TabIndex = 19;
@@ -104,7 +105,7 @@
             this.btnThemMoi.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.btnThemMoi.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThemMoi.Location = new System.Drawing.Point(196, 279);
-            this.btnThemMoi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThemMoi.Margin = new System.Windows.Forms.Padding(4);
             this.btnThemMoi.Name = "btnThemMoi";
             this.btnThemMoi.Size = new System.Drawing.Size(136, 44);
             this.btnThemMoi.TabIndex = 18;
@@ -118,7 +119,7 @@
             // 
             this.txtNhapLai.Border.Class = "TextBoxBorder";
             this.txtNhapLai.Location = new System.Drawing.Point(220, 212);
-            this.txtNhapLai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNhapLai.Margin = new System.Windows.Forms.Padding(4);
             this.txtNhapLai.Name = "txtNhapLai";
             this.txtNhapLai.Size = new System.Drawing.Size(247, 22);
             this.txtNhapLai.TabIndex = 17;
@@ -130,7 +131,7 @@
             // 
             this.txtMK.Border.Class = "TextBoxBorder";
             this.txtMK.Location = new System.Drawing.Point(220, 176);
-            this.txtMK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMK.Margin = new System.Windows.Forms.Padding(4);
             this.txtMK.Name = "txtMK";
             this.txtMK.Size = new System.Drawing.Size(247, 22);
             this.txtMK.TabIndex = 16;
@@ -142,7 +143,7 @@
             // 
             this.txtTenDN.Border.Class = "TextBoxBorder";
             this.txtTenDN.Location = new System.Drawing.Point(220, 144);
-            this.txtTenDN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTenDN.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenDN.Name = "txtTenDN";
             this.txtTenDN.Size = new System.Drawing.Size(247, 22);
             this.txtTenDN.TabIndex = 15;
@@ -154,7 +155,7 @@
             // 
             this.txtmanv.Border.Class = "TextBoxBorder";
             this.txtmanv.Location = new System.Drawing.Point(220, 112);
-            this.txtmanv.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtmanv.Margin = new System.Windows.Forms.Padding(4);
             this.txtmanv.Name = "txtmanv";
             this.txtmanv.Size = new System.Drawing.Size(247, 22);
             this.txtmanv.TabIndex = 14;
@@ -162,7 +163,7 @@
             // labelX4
             // 
             this.labelX4.Location = new System.Drawing.Point(56, 212);
-            this.labelX4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.labelX4.Margin = new System.Windows.Forms.Padding(4);
             this.labelX4.Name = "labelX4";
             this.labelX4.Size = new System.Drawing.Size(135, 28);
             this.labelX4.TabIndex = 13;
@@ -171,7 +172,7 @@
             // labelX3
             // 
             this.labelX3.Location = new System.Drawing.Point(56, 176);
-            this.labelX3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.labelX3.Margin = new System.Windows.Forms.Padding(4);
             this.labelX3.Name = "labelX3";
             this.labelX3.Size = new System.Drawing.Size(116, 28);
             this.labelX3.TabIndex = 12;
@@ -181,7 +182,7 @@
             // labelX2
             // 
             this.labelX2.Location = new System.Drawing.Point(56, 140);
-            this.labelX2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.labelX2.Margin = new System.Windows.Forms.Padding(4);
             this.labelX2.Name = "labelX2";
             this.labelX2.Size = new System.Drawing.Size(116, 28);
             this.labelX2.TabIndex = 11;
@@ -190,7 +191,7 @@
             // Tên
             // 
             this.Tên.Location = new System.Drawing.Point(56, 108);
-            this.Tên.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Tên.Margin = new System.Windows.Forms.Padding(4);
             this.Tên.Name = "Tên";
             this.Tên.Size = new System.Drawing.Size(135, 28);
             this.Tên.TabIndex = 10;
@@ -203,10 +204,10 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(613, 423);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmThemTaiKhoan";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng kí tài khoản";
-            this.Load += new System.EventHandler(this.frmThemTaiKhoan_Load);
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
