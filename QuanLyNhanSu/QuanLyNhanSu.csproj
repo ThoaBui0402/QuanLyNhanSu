@@ -235,5 +235,8 @@
   <ItemGroup>
     <None Include="Resources\package_available_locked21.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
