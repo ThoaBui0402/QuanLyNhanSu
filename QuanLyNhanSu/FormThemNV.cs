@@ -33,7 +33,7 @@ namespace QuanLyNhanSu
             {
                 if (ConnectDatabase.checkNhanVien(temp.Manv) == 1)
                 {
-                    MessageBox.Show("Mã nhân viên đã tồn tại. Xin mời nhập lại!!!");
+                    MessageBox.Show("Mã nhân viên đã tồn tại. Vui lòng nhập mã khác.");
                     return;
 
                 }
