@@ -328,7 +328,7 @@ namespace QuanLyNhanSu
                // 
                // groupBox2
                // 
-               this.groupBox2.BackColor = System.Drawing.Color.White;
+               this.groupBox2.BackColor = System.Drawing.SystemColors.ActiveCaption;
                this.groupBox2.Controls.Add(this.txtTG);
                this.groupBox2.Controls.Add(this.labelX13);
                this.groupBox2.Controls.Add(this.txtDT);
@@ -392,7 +392,7 @@ namespace QuanLyNhanSu
                // 
                // groupBox1
                // 
-               this.groupBox1.BackColor = System.Drawing.Color.Turquoise;
+               this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
                this.groupBox1.Controls.Add(this.buttonX1);
                this.groupBox1.Controls.Add(this.labelX9);
                this.groupBox1.Controls.Add(this.groupBox2);
@@ -416,7 +416,7 @@ namespace QuanLyNhanSu
                this.Margin = new System.Windows.Forms.Padding(4);
                this.Name = "FormThemNV";
                this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-               this.Text = "FormThemNV";
+               this.Text = "Thêm NV";
                this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
                this.Load += new System.EventHandler(this.FormThemNV_Load);
                ((System.ComponentModel.ISupportInitialize)(this.dgvThemNV)).EndInit();
